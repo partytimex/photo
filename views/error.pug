@@ -1,0 +1,25 @@
+extends error_layout
+
+block content
+    div#help
+        h1=error.status
+        h2=message
+        a.button(href='/') 带我回家
+    div#stars
+    div#land
+        div#fire
+            div.flame
+            div.flame
+            div.flame
+            div.flame
+            div.flame
+            div#logs
+                div#logOne
+                div#logTwo
+                div#flicker
+        div#ground
+    //h1= error.status
+    //p= message
+    //a.button(href='/') Home
+      
+    //pre #{error.stack}
