@@ -90,8 +90,8 @@ var common = function(req, res, next, page, rows) {
         }
         res.render('index', {
             data: data,
-            title: '必应壁纸',
-            description: 'Bing 每日壁纸',
+            title: '一天一壁纸',
+            description: '世界无形，一路随心。',
             page: page
         });
     } else {

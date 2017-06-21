@@ -23,7 +23,7 @@ var weiboUtils = require('./utils/weiboUtils');
 var app = express();
 app.disable('x-powered-by');
 app.use('/static', express.static(path.join(__dirname, 'static')));
-app.use(favicon(__dirname + '/static/images/bing.ico'));
+app.use(favicon(__dirname + '/static/images/favicon.ico'));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');

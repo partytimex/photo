@@ -12,7 +12,8 @@ module.exports = {
         var defaultOptions = {
             idx: 0,
             n: 1,
-            format: 'js'
+            format: 'js',
+            setmkt: 'zh-CN'
         };
         if (Object.prototype.toString.call(options) === '[object Object]') {
             // 合并对象
@@ -74,7 +75,8 @@ module.exports = {
         var options = {
             idx: 1,
             n: 2,
-            format: 'js'
+            format: 'js',
+            setmkt: 'zh-CN'
         };
         module.exports.fetchPicture(options, callback);
     },

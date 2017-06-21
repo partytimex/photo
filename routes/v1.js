@@ -59,9 +59,9 @@ var v1 = function(req, res, next) {
             var data = rows[0];
             if (!!w || !!h) {
                 if (resolutions.indexOf(size) > -1) {
-                    data['url'] = 'http://static.ioliu.cn/bing/' + data.qiniu_url + '_' + size + '.jpg';
+                    data['url'] = 'http://1ptime.com/bing/' + data.qiniu_url + '_' + size + '.jpg';
                 }
-                var qiniu_url = /static\.ioliu\.cn/.test(data.url) ? data.url : qiniuUtils.imageView(data.qiniu_url, w, h);
+                var qiniu_url = /api\.1ptime\.com/.test(data.url) ? data.url : qiniuUtils.imageView(data.qiniu_url, w, h);
                 request.get(qiniu_url)
                     .set(cookie)
                     .end(function(err, response) {
