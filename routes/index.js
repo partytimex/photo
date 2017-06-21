@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
         }
     };
     if (!!id && Number(id) > 0) {
-        params['body'] = 'id<=' + id;
+        params['body'] = 'id=' + id;
         dbUtils.get('bing', params, function(rows) {
             var page = {
                 prev: 1,
