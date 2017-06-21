@@ -18,7 +18,7 @@ block content
                         img.progressive__img.progressive--not-loaded(data-progressive=val.smallpic,src=original )
                     h2 ##{val.date}# #{val.copyright}
                     p #{val.description}
-                    - var url = 'http://service.weibo.com/share/share.php?url='+encodeURIComponent('http://1ptoday.com?id='+val.id)+'&title='+encodeURIComponent('#必应壁纸# '+ val.date + ' / '+ val.description) + '&appkey=2459069629&pic='+original;
+                    - var url = 'http://service.weibo.com/share/share.php?url='+encodeURIComponent('http://1ptoday.com?id='+val.id)+'&title='+encodeURIComponent('#1ptoday# '+ val.date + ' / '+ val.description.slice(0, 130)) + '...&appkey=2459069629&pic='+original;
                     ul.actions
                         li
                             a.button.small(href=url,target="_blank",rel="nofollow") 分享
